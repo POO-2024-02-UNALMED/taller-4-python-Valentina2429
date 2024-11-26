@@ -3,7 +3,7 @@ from classroom.asignatura import Asignatura
 class Grupo:
     grado = "Grado 12"
 
-    def __init__(self, grupo="grupo predeterminado", asignaturas=None, estudiantes = []):
+    def __init__(self, grupo="grupo predeterminado", asignaturas=None, estudiantes=[]):
         self._grupo = grupo
         if asignaturas is None:
             asignaturas = []
@@ -32,5 +32,5 @@ class Grupo:
         cls.grado = nombre
 
     @ classmethod
-    def asignarNombre(cls, nombre="Grado 4"):
+    def asignarNombre(cls, nombre="Grado 6"):
         cls.grado = nombre
